@@ -161,7 +161,7 @@ body section.hero {
   background-repeat: no-repeat;
   background-position: center center;
   height: 100vh;
-  /* background-size: cover; */
+  background-size: cover;
 }
 body section.hero::before {
   width: 100%;
@@ -184,7 +184,7 @@ body section.hero .destak .title {
   height: calc(100vh - 200px);
 }
 body section.hero .destak .title .wrapper_content .index_slider {
-  /* display: none; */
+  display: none;
 }
 body section.hero .destak .title .wrapper_content .wrapper_title h1 {
   font-size: 50px;
@@ -302,7 +302,7 @@ body section.hero .destak .links .arrow svg {
   body section.hero .destak .title .wrapper_content .wrapper_title h2 {
     position: absolute;
     display: flex;
-    bottom: 25px;
+    bottom: 100px;
     left: 100px;
     font-family: "Lato-Light";
     text-transform: uppercase;
@@ -347,9 +347,9 @@ body section.hero .destak .links .arrow svg {
     justify-content: center;
   }
   body section.hero .destak .wrapper_content .index_slider {
-    position: absolute;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
+    position: absolute;
     left: 0;
     padding: 0;
     margin: 0;
@@ -675,6 +675,102 @@ main .perfect-vacations .vacation-text button:hover {
   }
   main .perfect-vacations .vacation-text p {
     max-width: 400px;
+  }
+}
+footer {
+  background: #1E1E1E;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+footer .footer-info, footer .copyright {
+  z-index: 2;
+}
+footer .footer-info {
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-info .logo {
+  align-self: center;
+}
+footer .footer-info .links-and-contact {
+  margin-top: 100px;
+  width: 100%;
+}
+footer .footer-info .links-and-contact .footer-links li {
+  margin-top: 10px;
+}
+footer .footer-info .links-and-contact h3 {
+  font-size: 1.6em;
+  color: #F2B822;
+}
+footer .footer-info .links-and-contact .contact {
+  margin-top: 40px;
+}
+footer .footer-info .links-and-contact .contact p {
+  margin-top: 10px;
+}
+footer .footer-info .social-media {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-info .social-media a img {
+  height: 50px;
+}
+footer .copyright {
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer .footer-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: unset;
+    margin-bottom: 50px;
+  }
+  footer .footer-info .logo img {
+    width: 150px;
+  }
+  footer .footer-info .links-and-contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: unset;
+    margin-left: 50px;
+  }
+  footer .social-media {
+    margin: unset;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .social-media a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info {
+    max-width: 1100px;
+  }
+  footer .footer-info .logo img {
+    width: 150px;
+  }
+  footer .footer-info .social-media {
+    display: flex;
   }
 }
 

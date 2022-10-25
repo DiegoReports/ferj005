@@ -86,7 +86,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
-    /* background-size: cover; */
+    background-size: cover;
 
     &::before {
       width: 100%;
@@ -111,7 +111,7 @@ body {
 
         .wrapper_content {
           .index_slider {
-            /* display: none; */
+            display: none;
           }
 
           .wrapper_title {
@@ -263,7 +263,7 @@ body {
               h2 {
                 position: absolute;
                 display: flex;
-                bottom: 25px;
+                bottom: 100px;
                 left: 100px;
                 font-family: 'Lato-Light';
                 text-transform: uppercase;
@@ -327,9 +327,9 @@ body {
           justify-content: center;
 
           .index_slider {
-            position: absolute;
-            display: flex;
+            display: flex !important;
             flex-direction: column;
+            position: absolute;
             left: 0;
             padding: 0;
             margin: 0;
