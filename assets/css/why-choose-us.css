@@ -39,5 +39,34 @@ main .why-choose-us .reasons .reason-item .icon {
   justify-content: center;
   align-items: center;
 }
+main .why-choose-us .reasons .reason-item.active {
+  border-bottom: 1px solid #f2b822;
+}
+main .why-choose-us .reasons .reason-item.active .icon {
+  background-color: #fefefd;
+}
+main .why-choose-us .reasons .reason-item.active h3 {
+  color: #f2b822;
+}
+
+@media (min-width: 768px) {
+  main .why-choose-us h2 {
+    font-size: 2.5em;
+  }
+  main .why-choose-us .reasons {
+    max-width: 700px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  main .why-choose-us .reasons {
+    max-width: 1100px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main .why-choose-us .reasons .reason-item {
+    width: 300px;
+  }
+}
 
 /*# sourceMappingURL=why-choose-us.css.map */
